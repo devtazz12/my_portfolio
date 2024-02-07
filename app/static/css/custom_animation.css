@@ -1,0 +1,93 @@
+.myfadeIn{
+animation-name: fadeIn;
+animation-duration: 5s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadein-left{
+    opacity: 0;
+    transform: translateX(-1000px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.fadein{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fadein-right{
+    opacity: 0;
+    transform: translateX(1000px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fadeinRight{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bounce-out{
+    animation: bounceOut 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bounceOut {
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    50%, 55% {
+        opacity: 1;
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    75%{
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+.delay-1s{
+    animation-delay: 0.5s;
+}
+.delay-2s{
+    animation-delay: 1s;
+}
+
+.animate__flash{
+    animation:flash 1s ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes flash {
+    0%,50%,100%{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}
+
+.animate__zoomin{
+    animation:zoomin 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomin {
+    from{
+        transform: scale3d(0.1,0.1,0.1,);
+    }
+    to{
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+
